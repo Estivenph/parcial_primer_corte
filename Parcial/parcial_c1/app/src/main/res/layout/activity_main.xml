@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="730dp"
+        android:background="#9C9191"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginTop="80dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <EditText
+                    android:id="@+id/valor_1"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="valor 1"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/valor_2"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="valor 2"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/valor_3"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="valor 3"
+                    android:inputType="number" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/factorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="25dp"
+                    android:background="#234575"
+                    android:onClick="factorial"
+                    android:text="Factorial" />
+
+                <Button
+                    android:id="@+id/multisuma"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="-20dp"
+                    android:background="#3F76CA"
+                    android:onClick="multisuma"
+                    android:text="Multisuma" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/res_1"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="resultado"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="382dp"
+            android:background="#548127"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/valor_4"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Ingrese Numero"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/fibonacci"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:onClick="fibonicci"
+                android:text="Fibonacci" />
+
+            <TextView
+                android:id="@+id/res_2"
+                android:layout_width="200dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#F8F6F6"
+                android:gravity="center"
+                android:hint="resultado"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
